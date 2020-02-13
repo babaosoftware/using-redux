@@ -1,0 +1,90 @@
+
+body,html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: cyan;
+}
+
+.movie-grid{
+    display: grid;
+    background-color: magenta;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.movie-top{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: coral;
+    padding: 8px;
+}
+
+.movie-query{
+    margin-right: 8px;
+    flex: 0 1 300px;
+}
+
+.movie-search{
+}
+
+
+
+.movie-list{
+    overflow: auto;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.movie-card{
+    width: 300px;
+    margin: 8px;
+    padding: 8px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-title{
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.movie-poster{
+    width: 300px;
+    max-height: 500px;
+}
+
+.movie-info{
+    padding-top: 8px;
+}
+
+.movie-filler{
+    flex: 1 1 auto;
+}
+
+.movie-res-spanner{
+    flex: 1 1 auto;
+}
+
+.movie-res-total-movies{
+    padding-right: 8px;
+}
+
+.movie-res-page-label{
+    padding-right: 8px;
+}
+
+.movie-res-page{
+    margin-right: 8px;
+}
+
